@@ -7,7 +7,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbackendapplicationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbackendapplicationApplication.class, args);
+
+		try {
+
+			SpringApplication.run(SpringbackendapplicationApplication.class, args);
+		} catch (Exception ee){
+			ee.printStackTrace();
+		}
+
 	}
 
 }
